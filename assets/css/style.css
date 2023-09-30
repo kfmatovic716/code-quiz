@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+  }
+
+h1 {
+    font-size:larger;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+}
+
+/* timer format */
+h2 {
+    text-align:left;
+    margin-left:60px;
+    color: red;
+    font-size: 25px;
+    margin-top:50px;
+}
+
+/* format of the quiz box */
+.main {
+    border-style:groove;
+    margin-top:10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    border: 7px solid blue;
+    text-align: center;
+}
+
+/* format of the start button */
+button {
+    font-size: 20px;
+    margin: 15px 200px 15px;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+/* paragraph description inside container box */
+p {
+    justify-content:center;
+}
+
+/* high score button formatting */
+.vw-highscore {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 550px;
+    background-color: blue;
+    color:antiquewhite;
+    font-size: large;
+}
