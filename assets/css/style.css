@@ -21,7 +21,7 @@ h2 {
 }
 
 /* format of the quiz box */
-.main {
+#main {
     border-style:groove;
     margin-top:10px;
     margin-left: 60px;
@@ -36,6 +36,12 @@ button {
     margin: 15px 200px 15px;
     padding: 10px;
     background-color: antiquewhite;
+}
+
+/* button color after clicking */
+button:active {
+    background-color: blueviolet;
+    color: whitesmoke;
 }
 
 /* paragraph description inside container box */
