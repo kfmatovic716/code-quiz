@@ -34,6 +34,7 @@ startButtn.addEventListener("click", function() {
     setTime();
     // var h1Elmt = document.queryselector("h1");
     mainEl.textContent = " ";
+    mainEl.setAttribute(border-style, "groove");
     // h1Elmt.textContent = " ";
     // startButtn.textContent =" ";
 
@@ -41,32 +42,37 @@ startButtn.addEventListener("click", function() {
 
 var score = 0;
 
-var quizzes = [ 
+var multChoiceQs = [ 
     {
-        question: "Commonly used data types DO not include: \n (a) strings \n (b) booleans \n (c) alerts \n (d) numbers",
+        question: "Commonly used data types DO not include: ",
+        choices: ["(a) strings", "(b) booleans", "(c) alerts", "(d) numbers"],
         answer: "c"
     },
     {
-        question: "The condition in an if/else statement is enclosed with _____. \n (a) quotes \n (b)curly brackets \n (c) parenthesis \n (d) square brackets",
+        question: "The condition in an if/else statement is enclosed with _____.",
+        choices: [" (a) quotes","(b)curly brackets","(c) parenthesis","(d) square brackets"],
         answer: "b"
     },
     {
-        question: "Arrays in JavaScript can be used to store ______. \n (a) numbers and strings \n (b) other arrays \n (c)booleans \n (d) all of the above",
+        question: "Arrays in JavaScript can be used to store ______.",
+        choices: ["(a) numbers and strings","(b) other arrays","(c)booleans","(d) all of the above"],
         answer: "d"
     },
     {
-        question: "String values must be enclosed within _______ when being assigned to variables. \n (a) commas, (b) curly brackets (c) quotes (d) parenthesis",
+        question: "String values must be enclosed within _______ when being assigned to variables.",  
+        choices: ["(a) commas,","(b) curly brackets","(c) quotes","(d) parenthesis"],
         answer: "c"
     },
     {
-        question: "A very useful tool used during development and debugging for printing content to the debugger is: \n (a) JavaScript (b) terminal/bash (c) for loops (d)console.log ",
+        question: "A very useful tool used during development and debugging for printing content to the debugger is: ",
+        choices: ["(a) JavaScript","(b) terminal/bash","(c) for loops","(d)console.log "],
         answer: "d"
-    }]
+    }];
 
-for (q=0; q < quizzes.length; q++) {
-    var userAns = window.prompt(quizzes[q].answer);
+for (q=0; q < multChoiceQs.length; q++) {
+    var userAns = window.prompt(multChoiceQs[q].answer);
     
-    if (userAns == quizzes[i].answer) {
+    if (userAns == multChoiceQs[i].answer) {
         score++;
         alert("Correct ✅");
     } else {
