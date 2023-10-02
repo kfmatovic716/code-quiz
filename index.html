@@ -10,9 +10,10 @@
   </head> 
 
   <body>
+  <!-- Beginning when the page loads -->
     <button class="vw-highscore">View High Scores</button>
    
-    <h2>Time: <span class="time"></span></h2>
+    <h2> Time: <span class="time"></span></h2>
     <div id="main">
       <h1>Coding Quiz Challenge</h1>
      
@@ -22,6 +23,43 @@
       <button class="start">START QUIZ</button>
     </div>
 
+    <!-- section to display when the quiz starts -->
+    <div class="container-Quiz">
+      <div class="flex">
+          <h3 class="question-here">Question(s)</h3>
+          <ul id="multiple-choices">
+              <li><button class="button-li" id="choice1">a. Choice</button></li>
+              <li><button class="button-li" id="choice2">b. Choice</button></li>
+              <li><button class="button-li" id="choice3">c. Choice</button></li>
+              <li><button class="button-li" id="choice4">d. Choice</button></li>
+          </ul>
+          <div id="conf-answr"></div>
+      </div>
+    </div>
+
+    <!-- section when the user inputs their initials after the game to record their score -->
+    <div class="record-score">
+      <div class="flex">
+          <h3 id="end-comment">All Done!</h3>
+          <p id="final-score">Your final score is: </p>
+          <p>Input Initials:
+              <input type="text" id="input-initials">
+              <button class="btn" id="submit-button">Submit</button>
+          </p>
+      </div>
+    </div>
+
+    <!-- Displays the highscore summary at the end of the game  -->
+    <div class="highscores">
+      <div class="flex">
+          <h3>High Scores</h3>
+          <p>
+              <ol id="user-record"></ol>
+          </p>
+          <button id="return-button">Go Back</button>
+          <button id="clear-results">Clear High Scores</button>
+      </div>
+    </div>
 
     <script src="./assets/js/script.js"></script>
   </body>
@@ -29,7 +67,7 @@
   
   
   
- !
+ 
 
   
   

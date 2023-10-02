@@ -38,15 +38,32 @@ button {
     background-color: antiquewhite;
 }
 
+/* multiple choice buttons */
+.button-li {
+    font-size: 15px;
+    margin: 15px 200px 15px;
+    padding: 10px;
+    background-color: lightblue;
+}
+
 /* button color after clicking */
 button:active {
-    background-color: blueviolet;
+    background-color: red;
     color: whitesmoke;
 }
 
 /* paragraph description inside container box */
 p {
     justify-content:center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#multiple-choices {
+    flex-direction: column;
+    display: flex;
 }
 
 /* high score button formatting */
@@ -58,3 +75,26 @@ p {
     color:antiquewhite;
     font-size: large;
 }
+
+
+.flex {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* settings for containers for quiz, scores and highscores - hidden */
+.container-Quiz, .record-score, .highscores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    margin: 0px 30%;
+}
+
+
+    /* .hidden {
+    display: none;
+} */
